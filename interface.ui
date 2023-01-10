@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>645</width>
+    <height>395</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Automate Typing</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+font: 10pt &quot;MS Shell Dlg 2&quot;;
+padding: 5px;
+}</string>
+  </property>
+  <widget class="QWidget" name="stylesheet">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout" columnstretch="1,3,1,1">
+    <property name="rightMargin">
+     <number>30</number>
+    </property>
+    <item row="3" column="1" colspan="2">
+     <widget class="QPushButton" name="startTypingButton">
+      <property name="text">
+       <string>Start Typing</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="documentFileLabel">
+      <property name="text">
+       <string>Document (docx)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="documentFileInput"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="waitLabel">
+      <property name="text">
+       <string>Wait (in seconds)</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="waitSpinBox"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="chooseDocumentFileButton">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="statusTip">
+       <string>Either press Ctrl+O or click on it to choose Document File</string>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Choose File</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>:/icons/images/icons/cil-options-horizontal.png</normaloff>:/icons/images/icons/cil-options-horizontal.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2" colspan="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
